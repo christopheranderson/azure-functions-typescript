@@ -1,16 +1,17 @@
-import {Context} from './context'
-
-export type HttpMethod = "OPTIONS" | "GET" | "HEAD" | "POST" | "PUT" | "DELETE" | "TRACE" | "CONNECT" | "PATCH"
-
+import { Context } from './context';
+export declare type HttpMethod = "OPTIONS" | "GET" | "HEAD" | "POST" | "PUT" | "DELETE" | "TRACE" | "CONNECT" | "PATCH";
 export interface IFunctionRequest {
     originalUrl: string;
     method: HttpMethod;
-    query: { [s: string]: string; };
-    headers: { [s: string]: string; };
+    query: {
+        [s: string]: string;
+    };
+    headers: {
+        [s: string]: string;
+    };
     body: any;
     rawbody: any;
 }
-
 export interface IFunctionResponse {
     body?: any;
     status?: number;
@@ -26,17 +27,13 @@ export interface IFunctionResponse {
         "expires"?: Date;
         "last-modified"?: Date;
         [s: string]: any;
-    }
+    };
 }
-
-export enum HttpStatusCodes {
-    // 1XX Informational
+export declare enum HttpStatusCodes {
     Continue = 100,
     SwitchingProtocols = 101,
     Processing = 102,
     Checkpoint = 103,
-
-    // 2XX Success
     OK = 200,
     Created = 201,
     Accepted = 202,
@@ -47,8 +44,6 @@ export enum HttpStatusCodes {
     MultiStatus = 207,
     AlreadyReported = 208,
     IMUsed = 226,
-
-    // 3XX Redirection
     MultipleChoices = 300,
     MovedPermanently = 301,
     Found = 302,
@@ -58,8 +53,6 @@ export enum HttpStatusCodes {
     SwitchProxy = 306,
     TemporaryRedirect = 307,
     PermanentRedirect = 308,
-
-    // 4XX Client Error
     BadRequest = 400,
     Unauthorized = 401,
     PaymentRequired = 402,
@@ -102,8 +95,6 @@ export enum HttpStatusCodes {
     InvalidToken = 498,
     TokenRequired = 499,
     RequestWasForbiddenByAntivirus = 499,
-
-    // 5XX Server Error
     InternalServerError = 500,
     NotImplemented = 501,
     BadGateway = 502,
@@ -125,8 +116,6 @@ export enum HttpStatusCodes {
     InvalidSSLCertificate = 526,
     SiteIsFrozen = 530,
 }
-
 export interface HttpContext extends Context {
-    res: IFunctionResponse
+    res: IFunctionResponse;
 }
-
