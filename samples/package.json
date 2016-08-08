@@ -1,0 +1,25 @@
+{
+  "name": "samples",
+  "version": "",
+  "description": "This is a test. This is only a test.",
+  "main": "",
+  "scripts": {
+    "prebuild": "typings install",
+    "build": "tsc",
+    "prewatch":"typings install",
+    "watch": "typings install & tsc -w"
+  },
+  "author": "christopheranderson",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/christopheranderson/azure-functions-typescript"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "azure-functions-typescript": "../"
+  },
+  "devDependencies": {
+    "typescript": "^1.8.10",
+    "typings": "^1.3.2"
+  }
+}

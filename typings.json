@@ -1,5 +1,5 @@
 {
-  "name": "typescript-functions",
+  "name": "azure-functions-typescript",
   "main":"src/index.d.ts",
   "homepage":"",
   "version":"0.0.1",
