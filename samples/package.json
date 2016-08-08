@@ -4,6 +4,7 @@
   "description": "This is a test. This is only a test.",
   "main": "",
   "scripts": {
+    "test":"node ./http-trigger/index.js",
     "prebuild": "typings install",
     "build": "tsc",
     "prewatch":"typings install",
