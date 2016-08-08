@@ -1,4 +1,6 @@
-import {HttpContext, IFunctionRequest, HttpStatusCodes, HttpMethod} from "../src/index.ts"
+/// <reference path="../typings/index.d.ts" />
+
+import {HttpContext, IFunctionRequest, HttpStatusCodes} from 'azure-functions'
 
 export function index(context: HttpContext, req: IFunctionRequest) {
     if(req.method == "GET")

@@ -1,4 +1,9 @@
 {
   "name": "typescript-functions",
-  "dependencies": {}
+  "main":"src/index.d.ts",
+  "homepage":"",
+  "version":"0.0.1",
+  "globalDependencies": {
+    "node": "registry:dt/node#6.0.0+20160514165920"
+  }
 }
