@@ -1,6 +1,6 @@
 # TypeScript libraries for Azure Functions
 
-> Azure Functions is still in preview. This library is still in alpha and not supported by the Azure Functions team for any use.
+> :construction: Azure Functions is still in preview. This library is still in alpha and not supported by the Azure Functions team for any use. :construction:
 
 These are some helper libraries for folks trying to use TypeScript with Azure Functions
 
