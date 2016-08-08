@@ -1,0 +1,1 @@
+# TypeScript libraries for Azure Functions
