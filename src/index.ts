@@ -1,5 +1,4 @@
-import {Context} from './context';
-import {IFunctionRequest, IFunctionResponse, HttpContext, HttpStatusCodes, HttpMethod} from './http';
+import { IContext } from './context';
+import { IFunctionRequest, IFunctionResponse, IHttpContext, HttpStatusCodes, HttpMethod } from './http';
 
-
-export {Context, IFunctionRequest, IFunctionResponse, HttpContext, HttpStatusCodes, HttpMethod};
+export { IContext, IFunctionRequest, IFunctionResponse, IHttpContext, HttpStatusCodes, HttpMethod };

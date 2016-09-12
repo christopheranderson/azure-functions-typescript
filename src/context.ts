@@ -1,4 +1,4 @@
-interface Context {
+export interface IContext {
     invocationId: string;
     bindingData: any;
     bindings: any;
@@ -7,5 +7,3 @@ interface Context {
 
     done(err?: any, output?: { [s: string]: any }): void;
 }
-
-export {Context}

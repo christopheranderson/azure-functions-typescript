@@ -1,10 +1,9 @@
-/// <reference path="../typings/index.d.ts" />
+import { IHttpContext, IFunctionRequest, HttpStatusCodes } from '@mattmazzola/azure-functions-typescript';
 
-import {HttpContext, IFunctionRequest, HttpStatusCodes} from 'azure-functions-typescript'
-
-export function index(context: HttpContext, req: IFunctionRequest) {
-    if(req.method == "GET")
-    context.res.status = HttpStatusCodes.OK;
-    context.done(null, {});
+export function index(context: IHttpContext, req: IFunctionRequest) {
+    if (req.method == "GET") {
+        context.res.status = HttpStatusCodes.OK;
+        context.done(null, {});
+    }
 }
 
