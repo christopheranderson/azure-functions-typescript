@@ -1,6 +1,6 @@
 {
   "name": "@mattmazzola/azure-functions-typescript",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Helper library for using TypeScript with Azure Functions",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
