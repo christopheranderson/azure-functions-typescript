@@ -1,4 +1,4 @@
-import {Context} from './context'
+import { IContext } from './context'
 
 export type HttpMethod = "OPTIONS" | "GET" | "HEAD" | "POST" | "PUT" | "DELETE" | "TRACE" | "CONNECT" | "PATCH"
 
@@ -126,7 +126,7 @@ export enum HttpStatusCodes {
     SiteIsFrozen = 530,
 }
 
-export interface HttpContext extends Context {
+export interface IHttpContext extends IContext {
     res: IFunctionResponse
 }
 

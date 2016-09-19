@@ -4,11 +4,7 @@
   "description": "This is a test. This is only a test.",
   "main": "",
   "scripts": {
-    "test":"node ./http-trigger/index.js",
-    "prebuild": "typings install",
-    "build": "tsc",
-    "prewatch":"typings install",
-    "watch": "typings install & tsc -w"
+    "test":"rm -rf ./node_modules && npm install && tsc && node ./http-trigger/index.js"
   },
   "author": "christopheranderson",
   "repository": {
@@ -20,7 +16,6 @@
     "azure-functions-typescript": "../"
   },
   "devDependencies": {
-    "typescript": "^1.8.10",
-    "typings": "^1.3.2"
+    "typescript": "^1.8.10"
   }
 }

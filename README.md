@@ -4,12 +4,12 @@
 
 These are some helper libraries for folks trying to use TypeScript with Azure Functions
 
-`npm install --save christopheranderson/azure-functions-typescript`
+`npm install --save @mattmazzola/azure-functions-typescript`
 
 ```typescript
-import {HttpContext, IFunctionRequest, HttpStatusCodes} from 'azure-functions-typescript'
+import { IHttpContext, IFunctionRequest, HttpStatusCodes } from 'azure-functions-typescript'
 
-export function index(context: HttpContext, req: IFunctionRequest) {
+export function index(context: IHttpContext, req: IFunctionRequest) {
     if(req.method == "GET")
     context.res.status = HttpStatusCodes.OK;
     context.done(null, {});
@@ -34,7 +34,7 @@ If you develop remotely, you can create a PowerShell function which will run npm
 
 File issues on GitHub with description/code samples. 
 
-You're also welcom to send a PR after following the instructions below. If it's a large change, please open an issue to discuss first.
+You're also welcome to send a PR after following the instructions below. If it's a large change, please open an issue to discuss first.
 
 ### Settings up development environment
 
@@ -45,17 +45,11 @@ You're also welcom to send a PR after following the instructions below. If it's 
     `cd azure-functions-typescript`
 
 3. Install dependences - `npm install`
-4. Build project - `npm run-script build`
-
-You can use `npm run-script watch` to watch for updates.
 
 ### Test
 
 1. Navigate to `./samples`
-2. Clear dependencies - `rm -rf ./node_modules`
-3. Install dependencies - `npm install`
-4. Build - `npm run-script build`
-5. Test - `npm test`
+2. Test - `npm test`
 
 If you see no errors, you're fine to send a PR.
 

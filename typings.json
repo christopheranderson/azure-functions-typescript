@@ -1,9 +1,7 @@
 {
-  "name": "azure-functions-typescript",
-  "main":"src/index.d.ts",
-  "homepage":"",
-  "version":"0.0.1",
+  "name": "@mattmazzola/azure-functions-typescript",
+  "dependencies": {},
   "globalDependencies": {
-    "node": "registry:dt/node#6.0.0+20160514165920"
+    "node": "registry:dt/node#6.0.0+20160909174046"
   }
 }
