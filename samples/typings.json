@@ -1,9 +1,0 @@
-{
-    "version": false,
-    "dependencies": {
-        "azure-functions-typescript": "file:../typings.json"
-    },
-    "globalDependencies": {
-        "node": "registry:dt/node#6.0.0+20160514165920"
-    }
-}

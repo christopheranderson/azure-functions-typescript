@@ -1,26 +1,25 @@
 {
-  "name": "samples",
-  "version": "",
-  "description": "This is a test. This is only a test.",
-  "main": "",
+  "name": "azure-function-types-samples",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test":"node ./http-trigger/index.js",
-    "prebuild": "typings install",
     "build": "tsc",
-    "prewatch":"typings install",
-    "watch": "typings install & tsc -w"
+    "watch": "tsc -w"
   },
-  "author": "christopheranderson",
+  "authors": [
+    "Chris Feijoo",
+    "christopheranderson"
+  ],
   "repository": {
     "type": "github",
-    "url": "https://github.com/christopheranderson/azure-functions-typescript"
+    "url": "https://github.com/kube/azure-functions-types"
   },
   "license": "MIT",
   "dependencies": {
-    "azure-functions-typescript": "../"
+    "azure-functions-types": "../"
   },
   "devDependencies": {
-    "typescript": "^1.8.10",
-    "typings": "^1.3.2"
+    "@types/node": "^7.0.8",
+    "typescript": "^2.2.1"
   }
 }
