@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Helper library for using TypeScript with Azure Functions",
   "main": "src/index.js",
+  "types": "src/index.d.ts",
   "scripts": {
     "pre-build": "typings install",
     "build": "tsc",
