@@ -1,7 +1,7 @@
 <h1 align="center">
   <img alt="Azure Functions Types"
     src="https://rawgit.com/kube/azure-functions-types/master/logo.svg"
-    width=420 />
+    width=340 />
   <br />
   Functions Types
 </h1>
