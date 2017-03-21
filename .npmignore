@@ -1,2 +1,6 @@
-node_modules
-typings
+/node_modules
+/src
+/lib/*.js
+.editorconfig
+tsconfig.json
+yarn.lock
