@@ -3,7 +3,7 @@ interface Context {
     bindingData: any;
     bindings: any;
 
-    log(text: any): void;
+    log(...text: any[]): void;
 
     done(err?: any, output?: { [s: string]: any }): void;
 }
