@@ -3,8 +3,10 @@
 import {HttpContext, IFunctionRequest, HttpStatusCodes} from 'azure-functions-typescript'
 
 export function index(context: HttpContext, req: IFunctionRequest) {
-    if(req.method == "GET")
-    context.res.status = HttpStatusCodes.OK;
-    context.done(null, {});
+    if (req.method === "GET") {
+        context.res.status = HttpStatusCodes.OK;
+        context.log("Completed Response: ", 1);
+        context.done(null, {});
+    }
 }
 
