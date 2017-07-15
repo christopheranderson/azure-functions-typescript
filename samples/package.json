@@ -4,11 +4,9 @@
   "description": "This is a test. This is only a test.",
   "main": "",
   "scripts": {
-    "test":"node ./http-trigger/index.js",
-    "prebuild": "typings install",
+    "test": "node ./http-trigger/index.js",
     "build": "tsc",
-    "prewatch":"typings install",
-    "watch": "typings install & tsc -w"
+    "watch": "tsc -w"
   },
   "author": "christopheranderson",
   "repository": {
@@ -17,10 +15,10 @@
   },
   "license": "MIT",
   "dependencies": {
-    "azure-functions-typescript": "../"
+    "azure-functions-typescript": "../",
+    "tslib": "1.7.1"
   },
   "devDependencies": {
-    "typescript": "^1.8.10",
-    "typings": "^1.3.2"
+    "typescript": "^2.4.1"
   }
 }

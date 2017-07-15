@@ -1,12 +1,14 @@
 {
     "compilerOptions": {
         "module": "commonjs",
-        "noImplicitAny": true,
+        "target": "es2015",
         "removeComments": true,
         "preserveConstEnums": true,
-        "sourceMap": true
+        "sourceMap": true,
+        "strict": true,
+        "importHelpers": true
     },
-    "exclude": [
-        "node_modules"
+    "files": [
+        "http-trigger/index.ts"
     ]
 }
