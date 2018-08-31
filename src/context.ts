@@ -3,7 +3,13 @@ interface Context {
     bindingData: any;
     bindings: any;
 
-    log(text: any): void;
+    log: {
+        (text: string): void;
+        warn: (text: string) => void;
+        error: (text: string) => void;
+        info: (text: string) => void;
+        verbose: (text: string) => void;
+    }
 
     done(err?: any, output?: { [s: string]: any }): void;
 }
